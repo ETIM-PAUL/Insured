@@ -1,6 +1,8 @@
 ## Insured App
 A simple insured contract that allows accounts create insurance for their crypto, as well as get loans using collaterals
 
+## Description
+
 ### We have the insured factory contract that allows you create an instance of either Insurance for crypto or Insurance for collateral
 
 ### Insured Crypto
@@ -12,5 +14,14 @@ The insurer can claim insurance dividends twice a year. Also you must insured at
 In this type of insurance, user can decide to give back the entire loan or % of the loan when the collateral value drops (note that this depends solely on the type of collateral you choose when creating this insurance). 
 
 If you choose collateral value drop type, you can pay back a percentage of the loan when the ETH price drops. Else you will have to pay back fully.
+
+## Author
+
+Etim Paul E.
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
