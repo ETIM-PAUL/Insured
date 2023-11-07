@@ -1,66 +1,16 @@
-## Foundry
+## Insured App
+A simple insured contract that allows accounts create insurance for their crypto, as well as get loans using collaterals
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+### We have the insured factory contract that allows you create an instance of either Insurance for crypto or Insurance for collateral
 
-Foundry consists of:
+### Insured Crypto
+In this type of contract, the insurer pays a protocol fee monthly, this protocol fee was determined by the account owner. User can only pay insurance fee monthly, the system prohibits paying insurance fee twice in a month.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The insurer can claim insurance dividends twice a year. Also you must insured at least twice a month to claim insurance. This helps you as well.
 
-## Documentation
+## Insured Collateral
+In this type of insurance, user can decide to give back the entire loan or % of the loan when the collateral value drops (note that this depends solely on the type of collateral you choose when creating this insurance). 
 
-https://book.getfoundry.sh/
+If you choose collateral value drop type, you can pay back a percentage of the loan when the ETH price drops. Else you will have to pay back fully.
 
-## Usage
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
